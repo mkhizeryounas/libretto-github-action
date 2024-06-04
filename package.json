@@ -1,0 +1,23 @@
+{
+  "name": "libretto-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "action/index.js",
+  "scripts": {
+    "test": "echo \"Error: Skip tests\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkhizeryounas/libretto-github-action.git"
+  },
+  "author": "mkhizeryounas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkhizeryounas/libretto-github-action/issues"
+  },
+  "homepage": "https://github.com/mkhizeryounas/libretto-github-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  }
+}

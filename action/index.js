@@ -2,8 +2,8 @@ const core = require('@actions/core');
 const github = require('@actions/github');
 
 try {
-  const exampleInput = core.getInput('exampleInput');
-  console.log(`Example input: ${exampleInput}`);
+  const accessToken = core.getInput('accessToken');
+  console.log(`Access token input: ${accessToken}`);
 
   const context = github.context;
   console.log(`Event: ${context.eventName}`);

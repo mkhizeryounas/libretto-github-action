@@ -15,7 +15,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'
+          node-version: '16'
 
       - name: Install dependencies
         run: npm install
@@ -23,7 +23,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-      - name: Custom Action Step
+      - name: Libretto prompt validation
         uses: ./action
         with:
-          exampleInput: 'example-value'
+          accessToken: '${{ secrets.LIBRETTO_ACCESS_TOKEN }}'
